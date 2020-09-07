@@ -24,6 +24,14 @@ cd lab1/
 
 ## Intro to EMNIST
 
+Inside **text_recognizer** folder there is a **datasets folder**. There is not where your dataset lives. The recommendation is to have the raw data externally to your VCS.  So in datasets is the logic to download the data, processing and augmenting it.
+
+In **Network folder** is the logic for constructing a neural network. 
+
+In **models folder** are the wrappers of the networks, the functionalities like loss function, saving, loading training. This distinction saves a lot of work later and makes code reusable.
+
+**Test folder** contains the specific tests for the model.
+
 - EMNIST = Extended Mini-NIST :)
 - All English letters and digits presented in the MNIST format.
 - Look at: `notebooks/01-look-at-emnist.ipynb`

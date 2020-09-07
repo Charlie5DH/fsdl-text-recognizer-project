@@ -29,7 +29,7 @@ In order to not have to set `PYTHONPATH` in every terminal you open, just add th
 ### If on own machine
 
 Run `conda env create` to create an environment called `fsdl-text-recognizer`, as defined in `environment.yml`.
-This environment will provide us with the right Python version as well as the CUDA and CUDNN libraries.
+This environment will provide us with the right Python version as well as the CUDA and CUDNN libraries. (`conda env create -f environment.yml`)
 We will install Python libraries using `pip-sync`, however, which will let us do three nice things:
 
 1. Separate out dev from production dependencies (`requirements-dev.in` vs `requirements.in`).
