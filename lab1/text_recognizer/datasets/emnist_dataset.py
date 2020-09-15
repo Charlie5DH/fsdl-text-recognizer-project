@@ -17,12 +17,15 @@ from text_recognizer.datasets.dataset import _download_raw_dataset, Dataset, _pa
 
 SAMPLE_TO_BALANCE = True  # If true, take at most the mean number of instances per class.
 
+# Creates paths for data
 RAW_DATA_DIRNAME = Dataset.data_dirname() / "raw" / "emnist"
 METADATA_FILENAME = RAW_DATA_DIRNAME / "metadata.toml"
 
 PROCESSED_DATA_DIRNAME = Dataset.data_dirname() / "processed" / "emnist"
 PROCESSED_DATA_FILENAME = PROCESSED_DATA_DIRNAME / "byclass.h5"
 
+# take the inmediate parent and resolve the full name and add emnist-essentials.json
+# very comfortable way of creating paths
 ESSENTIALS_FILENAME = Path(__file__).parents[0].resolve() / "emnist_essentials.json"
 
 

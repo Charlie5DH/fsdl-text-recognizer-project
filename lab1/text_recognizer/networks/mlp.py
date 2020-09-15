@@ -11,6 +11,7 @@ def mlp(
     layer_size: int = 128,
     dropout_amount: float = 0.2,
     num_layers: int = 3,
+    # forcing to return a Keras Model
 ) -> Model:
     """
     Create a simple multi-layer perceptron: fully-connected layers with dropout between them, with softmax predictions.
